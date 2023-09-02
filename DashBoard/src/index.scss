@@ -1,0 +1,307 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/*
+===============
+Variables
+===============
+*/
+
+:root{
+    --header-bgc: #229e94;
+    --topbar-bgc: #27afa4;
+    --header-txt-clr: #cee6e3;
+    --sidebar-bgc: #ffffff;
+    --menu-active: #ececec;
+    --company-no: #3ba5f2;
+    --assets-no: #5ac274;
+    --incident-no: #ff965c;
+    --text-clr: #424242;
+}
+
+*{
+    padding: 0;margin: 0;
+}
+
+.active{
+    // width: 300px;
+    background-color: var(--menu-active);
+}
+.DashBoard{
+    height: auto;
+    padding:0 0 10px 20px;
+    background-color: var(--menu-active);
+}
+.MenuList{
+    width: 20%;
+    height: 115vh;
+    box-shadow: 1px 1px 2px gray;
+}
+.menuIcon{
+    color: var(--sidebar-bgc);
+    font-size: 18px;
+}
+.header{
+    padding: 8px;
+    text-align: left;
+    background-color: var(--header-bgc);
+}
+
+.headerText{
+    padding-right: 30px;
+    color: var(--header-txt-clr);
+    font-family: 'Rubik', sans-serif;
+    display: inline;
+}
+.ListItems li{
+    margin: 20px 0;
+    font-family: 'Rubik', sans-serif;
+    width: 500px;
+}
+.ListItems{
+    width: 300px;
+
+}
+.ListItems li a{
+    width: 300px;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+.space{
+    margin-left: 10px;
+}
+
+.Flex{
+    display: flex;
+    width: 100%;
+}
+.TopBar{
+    width: 100%;
+    height: 100vh;
+}
+
+.TopBar-Header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--topbar-bgc) ;
+
+}
+.iconCont{
+    padding: 0 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 30%;
+}
+
+.Icons{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px;
+    margin: 0 10px;
+    color: var(--header-txt-clr);
+}
+
+.Icons:hover{
+    transition: 1s;
+    border-radius: 50%;
+    background-color: var(--header-bgc);
+}
+
+.formDiv{
+    padding-top: 30px;
+    width: 30%;
+    height: 300px;
+    margin: 70px auto 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.formDiv input{
+    width: 90%;
+    height: 35px;
+    margin: 15px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+.formDiv input:focus{
+    outline: none;
+}
+.submitBtn{
+    height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    color: var(--header-txt-clr);
+    background-color: var(--topbar-bgc);   
+}
+.regSection{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.eachReg{
+    width: 32%;
+    height: 100px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+    background-color: var(--sidebar-bgc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fDiv{
+    padding: 15px 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.regNo{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+.one{
+    color: var(--company-no);
+}
+.two{
+    color: var(--assets-no);
+}
+.three{
+    color: var(--incident-no);
+}
+.icon1{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--menu-active);
+    background-color: var(--company-no);
+}
+.icon2{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--menu-active);
+    background-color: var(--assets-no);
+}
+.icon3{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--menu-active);
+    background-color: var(--incident-no);
+}
+.regDetail{
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--text-clr);
+    font-family: 'Rubik', sans-serif;   
+}
+.regComp-Div{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    background-color: var(--company-no);
+}
+.same{
+    background-color: var(--assets-no);
+}
+.same-one{
+background-color: var(--incident-no);
+}
+.PieTable{
+    width: 53%;
+}
+.regComp{
+    color: var(--menu-active);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+.SecOne{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.SecTwo{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 230px;
+}
+.pieContainer{
+    width: 48%;
+    height: auto;
+    margin: 15px 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background-color: var(--sidebar-bgc);
+}
+.TableDiv{
+    margin: 20px 20px 0 0;
+    width: 44%;
+    height: 390px;
+}
+.TableContainer{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.Table{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+.PieDiv{
+
+    display: flex;
+    justify-content: space-between;
+}
+.PieHeading{
+    color: var(--text-clr);
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 3px;
+}
+.BarContainer{
+    width: 47%;
+    height: 220px;
+    padding: 0 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: var(--sidebar-bgc);
+}
+.adminProfile{
+    color: var(--sidebar-bgc);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+.incidentDetail{
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--text-clr);
+}
+// Media Query
+@media screen and (min-width: 1508px) {
+    .navCollapse{
+        width: 80px;
+    }
+    .navCollapse .space, .headerText{
+        display: none;
+    }
+    .sideBarIcon{
+        font-size: 17px;
+        }
+}
